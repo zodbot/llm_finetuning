@@ -54,6 +54,10 @@ Sentiment: Negative
 Confidence: 61.85%
 Probabilities: Positive: 38.15%, Negative: 61.85%
 
+## Training Results
+
+### Accuracy Plot
 <img src="docs/result1.png" width="500" alt="Description of image">
 
-<img src="docs/result.png" width="500" alt="Description of image">
+### Loss Plot
+<img src="docs/result2.png" width="500" alt="Description of image">
