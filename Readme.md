@@ -23,7 +23,9 @@ This project fine-tunes GPT-2 on the SST-2 (Stanford Sentiment Treebank) dataset
 - Weight decay: 0.01
 - Batch size: 8
 
-## Results
+## Results 
+### Base Model
+
 ### Before Fine-tuning
 - Training accuracy: 55.00%
 - Validation accuracy: 62.50%
@@ -35,13 +37,15 @@ This project fine-tunes GPT-2 on the SST-2 (Stanford Sentiment Treebank) dataset
 - Test accuracy: 93.75%
 
 
-### Accuracy Plot
+#### Accuracy Plot
 <img src="docs/result1.png" width="500" alt="Description of image">
 
-### Loss Plot
+#### Loss Plot
 <img src="docs/result2.png" width="500" alt="Description of image">
 
-### Added more data
+### Experiment 1: Added more data
+Changes: 
+- Number of examples = 10000 
 
 #### Accuracy Plot
 <img src="docs/more_data/1.png" width="500" alt="Description of image">
@@ -68,16 +72,16 @@ This project fine-tunes GPT-2 on the SST-2 (Stanford Sentiment Treebank) dataset
 - Validation accuracy: 81.25%
 - Test accuracy: 90.62%
 
-### Experiment 2: Lower Learning Rate
+### Experiment 3: Lower Learning Rate
 
 Changes:
 - Reduced learning rate to 1e-5
 - Kept other parameters same as Experiment 1
 
-### Accuracy Plot
+#### Accuracy Plot
 <img src="docs/lr_05/1.png" width="500" alt="Description of image">
 
-### Loss Plot
+#### Loss Plot
 <img src="docs/lr_05/2.png" width="500" alt="Description of image">
 
 - Training accuracy: 68.75%
