@@ -1,4 +1,17 @@
-# GPT-2 Fine-tuning for Sentiment Classification
+# GPT-2 Implementation and Fine-tuning for Sentiment Classification
+
+This project implements GPT-2 from scratch and fine-tunes it on the SST-2 dataset for binary sentiment classification.
+
+## Model Implementation Details
+- Built complete GPT-2 architecture from scratch:
+  - Multi-head self-attention mechanism
+  - Position embeddings
+  - Token embeddings
+  - Layer normalization
+  - Feed-forward networks
+  - Transformer blocks
+- Model size: 124M parameters
+- Implemented in PyTorch with no use of pre-built transformer libraries
 
 This project fine-tunes GPT-2 on the SST-2 (Stanford Sentiment Treebank) dataset for binary sentiment classification.
 
@@ -110,3 +123,8 @@ Probabilities: Positive: 38.15%, Negative: 61.85%
 - Lower learning rate led to more stable training but lower performance
 - Model shows high confidence on clear sentiment examples but appropriate uncertainty on mixed reviews
 - Increasing number of batches led to lower performance 
+- When increasing the number of unfrozen transformer layers from one to two:
+  - Training accuracy reached 100% (overfitting)
+  - Validation accuracy remained at 84.38%
+  - Test accuracy increased to 96.88%
+  - This pattern indicates clear overfitting, where additional model capacity led to memorization of training data rather than better generalization. While test accuracy improved, the perfect training accuracy suggests the model might not be robust to new, unseen data.
