@@ -117,6 +117,15 @@ Sentiment: Negative
 Confidence: 61.85%
 Probabilities: Positive: 38.15%, Negative: 61.85%
 
+## Fine-tuning with LoRA: 
+
+- Training accuracy: 87.50%
+- Validation accuracy: 83.75%
+- Test accuracy: 91.25%
+
+<img src="docs/lora.png" width="500" alt="Description of image">
+
+
 ## Observations
 
 - Adding dropout and increasing data reduced overfitting 
@@ -128,3 +137,9 @@ Probabilities: Positive: 38.15%, Negative: 61.85%
   - Validation accuracy remained at 84.38%
   - Test accuracy increased to 96.88%
   - This pattern indicates clear overfitting, where additional model capacity led to memorization of training data rather than better generalization. While test accuracy improved, the perfect training accuracy suggests the model might not be robust to new, unseen data.
+
+
+
+
+
+
